@@ -1,0 +1,5 @@
+Player inputs selection of rock, paper, or scissors.
+A function generates random choice between rock, paper, or scissors.
+Player choice is calculated against computer choice.
+Winning choice is output to console.
+
