@@ -15,8 +15,37 @@ function getComputerChoice() {
 
 //Player chooses to complete inputs
 
-const playerSelection = prompt("Pick one" , "Rock, paper, scissors");
-const computerSelection = getComputerChoice();
+const playerSelection = prompt("Pick one" , "Rock, paper, or scissors");
 
+//Game is played out
 
-console.log(playerSelection, computerSelection)
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === "rock", computerSelection === "Scissors") {
+        result = "You win!"
+    } else if (playerSelection === "rock", computerSelection === "Rock") {
+        result = "It's a tie!"
+    } else if (playerSelection === "rock", computerSelection === "Paper") {
+        result = "You lose!"
+    }
+
+    if (playerSelection === "paper", computerSelection === "Scissors") {
+        result = "You lose!"
+    } else if (playerSelection === "paper", computerSelection === "Rock") {
+        result = "You win!"
+    } else if (playerSelection === "paper", computerSelection === "Paper") {
+        result = "It's a tie!"
+    }
+
+    if (playerSelection === "scissors", computerSelection === "Scissors") {
+        result = "It's a tie!"
+    } else if (playerSelection === "scissors", computerSelection === "Rock") {
+        result = "You lose!"
+    } else if (playerSelection === "scissors", computerSelection === "Paper") {
+        result = "You win!"
+    }
+
+    return(result);
+
+    }
+
+console.log(playRound);
