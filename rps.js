@@ -11,36 +11,39 @@ function getComputerChoice() {
     return computerPick;
     }
 
+console.log(getComputerChoice());
     
 
 //Player chooses to complete inputs
 
-const playerSelection = prompt("Pick one" , "Rock, paper, or scissors");
+let playerSelection = prompt("Pick one" , "Rock, paper, or scissors");
 
 //Game is played out
 
-function playRound(playerSelection, computerSelection) {
-    if (playerSelection === "rock", computerSelection === "Scissors") {
+function playRound(playerSelection, computerPick) {
+    let result;
+
+    if (playerSelection === "rock", computerPick === "Scissors") {
         result = "You win!"
-    } else if (playerSelection === "rock", computerSelection === "Rock") {
+    } else if (playerSelection === "rock", computerPick === "Rock") {
         result = "It's a tie!"
-    } else if (playerSelection === "rock", computerSelection === "Paper") {
+    } else if (playerSelection === "rock", computerPick === "Paper") {
         result = "You lose!"
     }
 
-    if (playerSelection === "paper", computerSelection === "Scissors") {
+    if (playerSelection === "paper", computerPick === "Scissors") {
         result = "You lose!"
-    } else if (playerSelection === "paper", computerSelection === "Rock") {
+    } else if (playerSelection === "paper", computerPick === "Rock") {
         result = "You win!"
-    } else if (playerSelection === "paper", computerSelection === "Paper") {
+    } else if (playerSelection === "paper", computerPick === "Paper") {
         result = "It's a tie!"
     }
 
-    if (playerSelection === "scissors", computerSelection === "Scissors") {
+    if (playerSelection === "scissors", computerPick === "Scissors") {
         result = "It's a tie!"
-    } else if (playerSelection === "scissors", computerSelection === "Rock") {
+    } else if (playerSelection === "scissors", computerPick === "Rock") {
         result = "You lose!"
-    } else if (playerSelection === "scissors", computerSelection === "Paper") {
+    } else if (playerSelection === "scissors", computerPick === "Paper") {
         result = "You win!"
     }
 
@@ -48,4 +51,4 @@ function playRound(playerSelection, computerSelection) {
 
     }
 
-console.log(playRound);
+console.log(playRound());
